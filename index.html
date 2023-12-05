@@ -12,6 +12,8 @@
             referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="header.css" />
+
     <script src="/ad-provider.js" type="text/javascript"></script>
     <script>
         (function (window) {
@@ -203,12 +205,14 @@
     }</script>
 </head>
 <body>
+
+<div class="carousel">
 <div class="options">
     <!-- --optionBackground : CSS Local Variable -->
     <div
             class="option active"
             style="
-          --optionBackground: url(https://cdn.pixabay.com/photo/2021/09/13/10/27/nature-6620939_960_720.jpg);
+          --optionBackground: url(images/1.jpg);
         "
     >
         <div class="shadow"></div>
@@ -217,17 +221,15 @@
                 <i class="fas fa-walking"></i>
             </div>
             <div class="info">
-                <div class="main">Valleys</div>
+                <div class="main">Algorithms</div>
             </div>
         </div>
     </div>
 
-    <!-- Copy the option and paste few more times -->
-
     <div
             class="option"
             style="
-          --optionBackground: url(https://cdn.pixabay.com/photo/2016/11/08/05/16/boy-1807518_960_720.jpg);
+          --optionBackground: url(Images/2-bad.png);
         "
     >
         <div class="shadow"></div>
@@ -236,7 +238,7 @@
                 <i class="fas fa-tint"></i>
             </div>
             <div class="info">
-                <div class="main">River</div>
+                <div class="main">Globalization</div>
             </div>
         </div>
     </div>
@@ -244,7 +246,7 @@
     <div
             class="option"
             style="
-          --optionBackground: url(https://cdn.pixabay.com/photo/2016/04/20/19/47/wolves-1341881_960_720.jpg);
+          --optionBackground: url(images/3.jpg);
         "
     >
         <div class="shadow"></div>
@@ -253,7 +255,7 @@
                 <i class="fas fa-snowflake"></i>
             </div>
             <div class="info">
-                <div class="main">Snow</div>
+                <div class="main">Infrastructure</div>
             </div>
         </div>
     </div>
@@ -261,16 +263,16 @@
     <div
             class="option"
             style="
-          --optionBackground: url(https://cdn.pixabay.com/photo/2016/10/14/19/21/canyon-1740973_960_720.jpg);
+          --optionBackground: url(images/4-bad.png);
         "
     >
         <div class="shadow"></div>
         <div class="label">
             <div class="icon">
-                <i class="fas fa-tree"></i>
+                <i class="fa-solid fa-user-secret"></i>
             </div>
             <div class="info">
-                <div class="main">Mountain</div>
+                <div class="main">Surveillance</div>
             </div>
         </div>
     </div>
@@ -278,7 +280,7 @@
     <div
             class="option"
             style="
-          --optionBackground: url(https://cdn.pixabay.com/photo/2017/05/27/22/33/morocco-2349647_960_720.jpg);
+          --optionBackground: url(images/5.png);
         "
     >
         <div class="shadow"></div>
@@ -287,12 +289,12 @@
                 <i class="fas fa-sun"></i>
             </div>
             <div class="info">
-                <div class="main">Sunny</div>
+                <div class="main">Regulation</div>
             </div>
         </div>
     </div>
 </div>
-
+</div>
 <div class="container">
     <header>
         <h1>Your Browser's Story</h1>
@@ -314,21 +316,18 @@
         <p>Find out how to safeguard your digital presence and maintain privacy in the digital world.</p>
     </section>
 
-    <section id="interactive-tools">
-        <h3>Interactive Privacy Tools</h3>
-        <div id="browserInfo"></div>
-        <div id="mobile"></div>
-        <div id="screenInfo"></div>
-        <div id="languageTimezone"></div>
-        <div id="webGLInfo"></div>
-        <div id="storageInfo"></div>
-        <div id="extensionInfo"></div>
-        <div id="OSInfo"></div>
-    </section>
+<!--    <section id="interactive-tools">-->
+<!--        <h3>Interactive Privacy Tools</h3>-->
+<!--        <div id="browserInfo"></div>-->
+<!--        <div id="mobile"></div>-->
+<!--        <div id="screenInfo"></div>-->
+<!--        <div id="languageTimezone"></div>-->
+<!--        <div id="webGLInfo"></div>-->
+<!--        <div id="storageInfo"></div>-->
+<!--        <div id="extensionInfo"></div>-->
+<!--        <div id="OSInfo"></div>-->
+<!--    </section>-->
 
-    <footer>
-        <p>&copy; 2023 Your Browser's Story. All rights reserved.</p>
-    </footer>
 </div>
 <script>
     console.log(window)
