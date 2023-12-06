@@ -6,6 +6,7 @@
   overflow: auto;
   height: auto;
   font-family: "Times New Roman", Times, serif;
+  background-color: #333;
 }
 
 .options {
@@ -14,48 +15,29 @@
   align-items: stretch;
   overflow: auto;
   min-width: 600px;
-  max-width: 900px;
+  max-width: 100vw;
   width: calc(100% - 100px);
-  height: 400px;
+  height: 100vh;
 }
-
 /* Each Option Image will display after the --optionBackround Variable created */
 .options .option {
   position: relative;
   overflow: auto;
   min-width: 60px;
   margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background: var(--optionBackground, var(--defaultBackground, #333333));
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
+  /*transition: width 2s ease-in-out, height 2s ease-in-out;*/
 
-.options .option :nth-child(1) {
-  --defaultBackground: #ed5565;
-}
-
-.options .option :nth-child(2) {
-  --defaultBackground: #fc6e51;
-}
-
-.options .option :nth-child(3) {
-  --defaultBackground: #5d9cec;
-}
-
-.options .option :nth-child(4) {
-  --defaultBackground: #2ecc71;
-}
-
-.options .option :nth-child(5) {
-  --defaultBackground: #ffce54;
 }
 
 .options .option.active {
   flex-grow: 10000;
   transform: scale(1);
-  max-width: 600px;
+  max-width: 100vw;
   margin: 0px;
   border-radius: 40px;
   background-size: auto 100%;
@@ -63,7 +45,7 @@
 
 .options .option.active .shadow {
   box-shadow: inset 0 -120px 120px -120px black,
-    inset 0 -120px 120px -120px black;
+  inset 0 -120px 120px -120px black;
 }
 
 .options .option.active .label {
@@ -130,7 +112,7 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
-  color: white;
+  color: #333;
   white-space: pre;
 }
 
