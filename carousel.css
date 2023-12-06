@@ -6,7 +6,7 @@
   overflow: auto;
   height: auto;
   font-family: "Times New Roman", Times, serif;
-  background-color: #333;
+  background-color: #222;
 }
 
 .options {
@@ -25,7 +25,7 @@
   overflow: auto;
   min-width: 60px;
   margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #333333));
+  background: var(--optionBackground, var(--defaultBackground));
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;

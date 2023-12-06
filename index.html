@@ -325,17 +325,17 @@
         <h3>Protecting Your Digital Identity</h3>
         <p>Find out how to safeguard your digital presence and maintain privacy in the digital world.</p>
     </section>
-<!--    <section id="interactive-tools">-->
-<!--        <h3>Interactive Privacy Tools</h3>-->
-<!--        <div id="browserInfo"></div>-->
-<!--        <div id="mobile"></div>-->
-<!--        <div id="screenInfo"></div>-->
-<!--        <div id="languageTimezone"></div>-->
-<!--        <div id="webGLInfo"></div>-->
-<!--        <div id="storageInfo"></div>-->
-<!--        <div id="extensionInfo"></div>-->
-<!--        <div id="OSInfo"></div>-->
-<!--    </section>-->
+    <section id="interactive-tools">
+        <h3>Interactive Privacy Tools</h3>
+        <div id="browserInfo"></div>
+        <div id="mobile"></div>
+        <div id="screenInfo"></div>
+        <div id="languageTimezone"></div>
+        <div id="webGLInfo"></div>
+        <div id="storageInfo"></div>
+        <div id="extensionInfo"></div>
+        <div id="OSInfo"></div>
+    </section>
 
 </div>
 <script>
@@ -361,6 +361,17 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
 ></script>
+<script>
+    var script = document.createElement('script'); // Create a new script element
+
+    if (window.browserInfo.mobile) {
+        script.src = 'mobile-header.js'; // Set the source to mobile-header.js for mobile devices
+    } else {
+        script.src = 'header.js'; // Set the source to header.js for non-mobile devices
+    }
+
+    document.head.appendChild(script); // Append the script element to the head of the document
+</script>
 <script src="carousel.js"></script>
 <script src="header.js"></script>
 </body>
