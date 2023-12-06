@@ -208,7 +208,7 @@
 
 
 <div class="carousel">
-    <div class="options">
+    <div class="options" id="options">
         <!-- --optionBackground : CSS Local Variable -->
         <div
                 class="option active"
@@ -366,6 +366,7 @@
 
     if (window.browserInfo.mobile) {
         document.getElementById('options').style.height = "50vh"
+
         script.src = 'mobile-header.js'; // Set the source to mobile-header.js for mobile devices
     } else {
         script.src = 'header.js'; // Set the source to header.js for non-mobile devices
