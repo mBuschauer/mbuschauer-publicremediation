@@ -10,6 +10,8 @@
             referrerpolicy="no-referrer"
             rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link href="carousel.css" rel="stylesheet"/>
     <link href="header.css" rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
@@ -329,41 +331,74 @@
         <div class="holder"></div>
     </div>
 
-
 </section>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<p>spacing</p>
-<script>
-    document.getElementById('browserInfo').innerHTML = `<p><strong>Browser:</strong> ${window.browserInfo.browser}</p>`;
-    document.getElementById('mobile').innerHTML = `<p><strong>Is Mobile:</strong> ${window.browserInfo.mobile}</p>`
-    document.getElementById('screenInfo').innerHTML = `<p><strong>Screen Resolution:</strong> ${window.browserInfo.screen}</p>`;
-    document.getElementById('languageTimezone').innerHTML = `<p><strong>Language:</strong> ${navigator.language}, <strong>Time Zone:</strong> ${Intl.DateTimeFormat().resolvedOptions().timeZone}</p>`;
-    document.getElementById('webGLInfo').innerHTML = getWebGLInfo()
-    const cookiesEnabled = navigator.cookieEnabled ? 'Enabled' : 'Disabled';
-    document.getElementById('storageInfo').innerHTML = `<p><strong>Cookies:</strong> ${cookiesEnabled}</p>`;
-    const extensionInfoDiv = document.getElementById('extensionInfo');
+<hr style="width: 80vw; color:#222222"/>
+<section class="interactive">
+    <h2>Who are you?</h2>
+    <div class="buttonDiv">
+        <button class="button-27" id="button-27" onclick="updateInformation();" role="button">Scan Me</button>
+    </div>
+    <div class="loaderDiv" id="loaderDiv">
+    </div>
 
-    if (document.getElementById('AinEzJhSCyjM')) {
-        extensionInfoDiv.innerHTML = "<p><strong>Adblocker:</strong> No</p>"
-    } else {
-        extensionInfoDiv.innerHTML = "<p><strong>Adblocker:</strong> Yes</p>"
+    <div class="interactiveDiv">
+        <div class="loaderHolder"></div>
+        <div class="interactiveData"><p><strong>Browser:</strong></p></div>
+        <div id="browserInfo" class="interactiveDataUpdate"></div>
+        <div class="loaderHolder"></div>
+    </div>
+    <div class="interactiveDiv">
+        <div class="loaderHolder"></div>
+        <div class="interactiveData"><p><strong>Is Mobile:</strong></p></div>
+        <div id="mobile" class="interactiveDataUpdate"></div>
+        <div class="loaderHolder"></div>
+    </div>
+    <div class="interactiveDiv">
+        <div class="loaderHolder"></div>
+        <div class="interactiveData"><p><strong>Screen Resolution:</strong></p></div>
+        <div id="screenInfo" class="interactiveDataUpdate"></div>
+        <div class="loaderHolder"></div>
+    </div>
+    <div class="interactiveDiv">
+        <div class="loaderHolder"></div>
+        <div class="interactiveData"><p><strong>Time Zone:</strong></p></div>
+        <div id="languageTimezone" class="interactiveDataUpdate"></div>
+        <div class="loaderHolder"></div>
+    </div>
+    <div class="interactiveDiv">
+        <div class="loaderHolder"></div>
+        <div class="interactiveData"><p><strong>OS Type:</strong></p></div>
+        <div id="OSInfo" class="interactiveDataUpdate"></div>
+        <div class="loaderHolder"></div>
+    </div>
+    <div class="interactiveDiv">
+        <div class="loaderHolder"></div>
+        <div class="interactiveData"><p><strong>IP Address:</strong></p></div>
+        <div id="ipInfo" class="interactiveDataUpdate"></div>
+        <div class="loaderHolder"></div>
+    </div>
+    <p class="learnMore"><a href="https://coveryourtracks.eff.org/kcarter?aat=1">Learn More</a></p>
+</section>
+<script>
+    async function updateInformation() {
+        if (document.getElementById('browserInfo').innerHTML === "") {
+            document.getElementById('loaderDiv').innerHTML = `<div class="loaderHolder"></div><div class="loader"></div><div class="loaderHolder"></div>`;
+            await sleep(2000);
+            document.getElementById('loaderDiv').innerHTML = ``;
+            document.getElementById('browserInfo').innerHTML = `<p>${window.browserInfo.browser}</p>`;
+            document.getElementById('mobile').innerHTML = `<p>${window.browserInfo.mobile}</p>`
+            document.getElementById('screenInfo').innerHTML = `<p>${window.browserInfo.screen}</p>`;
+            document.getElementById('languageTimezone').innerHTML = `<p>${Intl.DateTimeFormat().resolvedOptions().timeZone}</p>`;
+            document.getElementById('OSInfo').innerHTML = `<p>${window.browserInfo.os}</p>`;
+            $.getJSON("https://api.ipify.org?format=json",
+                function (data) {
+                    document.getElementById('ipInfo').innerHTML = `<p>${data.ip}</p>`;
+                })
+        }
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 </script>
 <script

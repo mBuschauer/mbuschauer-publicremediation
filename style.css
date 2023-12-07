@@ -1,40 +1,164 @@
-.flexbox{
+.flexbox {
     display: flex;
 }
 
-.mainInformation > h1{
-    text-align:center;
+.mainInformation > h1 {
+    text-align: center;
     padding: 5vh 0 0 0;
     color: #222222;
 }
-.mainInformation > h3{
-    text-align:center;
+
+.mainInformation > h3 {
+    text-align: center;
     color: #222222;
 }
 
-.box > p{
+.box > p {
     text-align: center;
 }
-.holder{
+
+.holder {
     max-width: 10vw;
     min-width: 5vw;
     /*border: 2px solid red;*/
     flex-grow: 1;
 }
 
-.box{
+.box {
     padding: 5px 20px 0 20px;
     justify-content: space-evenly;
     color: #222222;
     display: flex;
     align-items: center;
-    text-align:center;
+    text-align: center;
     width: 60vw;
     flex-grow: 0;
     /*border: 2px solid black*/
 }
-.rightPicture{
+
+.rightPicture {
     max-width: 30vw;
     flex-grow: 0;
     max-height: 40vh;
+}
+
+.interactive > h2 {
+    text-align: center;
+    color: #222222;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-27 {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    max-width: 10vw;
+    will-change: transform;
+}
+
+.button-27:disabled {
+    pointer-events: none;
+}
+
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+.loaderDiv {
+    display: flex;
+    align-content: center;
+    height:60px
+}
+.loader {
+    border: 16px solid white;
+    border-radius: 50%;
+    border-top: 16px solid #222222;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    flex-grow: 0;
+}
+
+.spacer{
+    height: 5vh;
+}
+
+.loaderHolder {
+    max-width: 50vw;
+    min-width: 5vw;
+    /*border: 2px solid red;*/
+    flex-grow: 1;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.interactiveDiv{
+    display: flex;
+}
+.interactiveData{
+    text-align: center;
+    width:5vw;
+    flex-grow: 1;
+}
+.interactiveDataUpdate{
+    text-align: center;
+    width:5vw;
+    flex-grow: 1;
+}
+.learnMore{
+    text-align: center;
+}
+
+.interactive > p > a{
+    text-decoration: none;
+    color: #222222;
+}
+.interactive > p > a:hover{
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+.interactive > p > a:visited{
+    text-decoration: none;
+    color: #222222;
 }
