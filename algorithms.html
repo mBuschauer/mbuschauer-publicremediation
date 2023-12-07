@@ -2,9 +2,218 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Algorithms</title>
+    <link
+            crossorigin="anonymous"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            referrerpolicy="no-referrer"
+            rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="carousel.css" rel="stylesheet"/>
+    <link href="header.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <style>
+        @font-face {
+            font-family: Amnesty;
+            src: url(ttf/AmnestyTradeGothic.ttf);
+        }
+
+    </style>
+    <script src="/js/ad-provider.js" type="text/javascript"></script>
+    <script>
+        (function (window) {
+            {
+                // mobile version
+                var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+
+            }
+            window.browserInfo = {
+                mobile: mobile,
+            };
+        }(this));
+    </script>
 </head>
 <body>
 
+<div class="notFooter">
+    <div class="carousel">
+        <div class="options" id="options">
+            <div
+                    class="option active"
+                    style="
+          --optionBackground: url(images/0.jpg);
+        "
+            >
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"><a class="imageLink" href="index.html">Home</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option" style="--optionBackground: url(images/2-wide.png);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"><a class="imageLink" href="globalization.html">Globalization</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                    class="option"
+                    style="
+          --optionBackground: url(images/3-wide.png);
+        "
+            >
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-gears"></i></div>
+
+                    <div class="info">
+                        <div class="main"><a class="imageLink" href="infrastructure.html">Infrastructure</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                    class="option"
+                    style="
+          --optionBackground: url(images/4-bad.png);
+        "
+            >
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"><a class="imageLink" href="surveillance.html">Surveillance</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option" style="--optionBackground: url(images/5-wide.png);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"><a class="imageLink" href="regulation.html">Regulation</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="site">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="globalization.html">Globalization</a>
+            <a href="infrastructure.html">Infrastructure</a>
+            <a href="surveillance.html">Surveillance</a>
+            <a href="regulation.html">Regulation</a>
+        </nav>
+    </section>
+    <section class="mainInformation">
+        <h1>Facebook's Role in the Myanmar Genocide</h1>
+        <h3>How Facebook’s systems promoted violence against Rohingya</h3>
+        <div class="flexbox">
+            <div class="holder"></div>
+
+            <div class="box" style="text-align: left">
+                <p>
+                    The role of Facebook in the Myanmar genocide is a complex and tragic example of how social media can
+                    inadvertently contribute to real-world violence. In 2017, the Myanmar military launched a campaign
+                    against the Rohingya, a predominantly Muslim ethnic minority in Myanmar's northern Rakhine State.
+                    This
+                    campaign involved systematic murder, rape, and burning of homes, leading to over 700,000 Rohingya
+                    fleeing the region. Throughout this period, Facebook's algorithms played a significant role in
+                    amplifying hatred and inciting violence against the Rohingya. The platform, powered by Meta's
+                    engagement-based algorithmic systems, became an echo chamber for anti-Rohingya content, filled with
+                    inflammatory posts that constituted incitement to violence, hostility, and discrimination. This
+                    content
+                    was not only shared widely but also reached the highest levels of Myanmar's military and civilian
+                    leadership. Senior General Min Aung Hlaing, for instance, declared on Facebook in 2017 that Myanmar
+                    had
+                    no Rohingya race.
+                </p>
+            </div>
+            <div class="rightPicture"><p
+                    style="position: absolute; padding: 200px 0 0 50px; font-family: Amnesty,serif;">Myanmar</p><img
+                    class="rightPicture" src="images/myanmar.jpg"></div>
+            <div class="holder"></div>
+        </div>
+
+        <div class="flexbox">
+            <div class="holder"></div>
+            <div class="rightPicture"><img class="rightPicture" src="images/myanmar-intrernet.png">
+                <p style="font-size: 12px;">Percentage of internet usage penetration rate with mobile phone in Myanmar
+                    (2005-2017)</p></div>
+
+            <div class="box" style="text-align: right">
+                <p>
+                    Despite warnings from local civil society activists and internal research acknowledging the
+                    potential
+                    for real-world harms from its algorithms, Meta failed to take appropriate actions. Internal studies
+                    dating back to 2012 showed Meta was aware of how its recommendation systems could exacerbate
+                    extremism.
+                    Yet, it consistently failed to enforce its policies on hate speech. The United Nations' Independent
+                    International Fact-Finding Mission on Myanmar concluded that social media played a significant role
+                    in
+                    the atrocities, underscoring the devastating impact Facebook had on the Rohingya community. Rohingya
+                    activist Mohamed Showife lamented how Facebook destroyed the Rohingya people's dream of living
+                    peacefully like others in the world. This case highlights the dire consequences of unchecked digital
+                    influence and the responsibility of tech giants like Facebook in moderating content to prevent such
+                    tragedies.
+                </p>
+            </div>
+            <div class="holder"></div>
+        </div>
+    </section>
+</div>
+<div class="verticalSpacer">
+</div>
+<footer style="background-color: #222222">
+    <div class="footerDiv">
+        <h6><a href="https://www.amnesty.org/en/latest/news/2022/09/myanmar-facebooks-systems-promoted-violence-against-rohingya-meta-owes-reparations-new-report/">Myanmar: Facebook’s systems promoted violence against Rohingya; Meta owes reparations</a></h6>
+        <h6>Next Generation of E-commerce’s Impacts on Myanmar Business Era</h6>
+    </div>
+</footer>
+<script
+        crossorigin="anonymous"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+></script>
+<script>
+    var script = document.createElement('script'); // Create a new script element
+
+    if (window.browserInfo.mobile) {
+        document.getElementById('options').style.height = "25vh"
+
+        script.src = 'mobile-header.js'; // Set the source to mobile-header.js for mobile devices
+    } else {
+        // document.getElementById('options').style.height = "50vh"
+
+        script.src = 'header.js'; // Set the source to header.js for non-mobile devices
+    }
+
+    document.head.appendChild(script); // Append the script element to the head of the document
+</script>
+<script src="js/carousel.js"></script>
+<script src="js/header.js"></script>
 </body>
+
+
 </html>

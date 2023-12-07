@@ -2,9 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Globalization</title>
+    <link
+            crossorigin="anonymous"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            referrerpolicy="no-referrer"
+            rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="carousel.css" rel="stylesheet"/>
+    <link href="header.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+
+    <script src="/js/ad-provider.js" type="text/javascript"></script>
+    <script>
+        (function (window) {
+            {
+                // mobile version
+                var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+
+            }
+            window.browserInfo = {
+                mobile: mobile,
+            };
+        }(this));
+    </script>
 </head>
 <body>
 
+
+<div class="carousel">
+    <div class="options" id="options">
+        <div
+                class="option"
+                style="
+          --optionBackground: url(images/1-bad2.png);
+        "
+        >
+            <div class="label">
+                <div class="icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <div class="info">
+                    <div class="main"><a class="imageLink" href="algorithms.html">Algorithms</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="option" style="--optionBackground: url(images/2-wide.png);">
+            <div class="shadow"></div>
+            <div class="label">
+                <div class="icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class="info">
+                    <div class="main"><a class="imageLink" href="globalization.html">Globalization</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div
+                class="option"
+                style="
+          --optionBackground: url(images/3-wide.png);
+        "
+        >
+            <div class="shadow"></div>
+            <div class="label">
+                <div class="icon">
+                    <i class="fa-solid fa-gears"></i></div>
+
+                <div class="info">
+                    <div class="main"><a class="imageLink" href="infrastructure.html">Infrastructure</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div
+                class="option"
+                style="
+          --optionBackground: url(images/4-bad.png);
+        "
+        >
+            <div class="shadow"></div>
+            <div class="label">
+                <div class="icon">
+                    <i class="fa-solid fa-user-secret"></i>
+                </div>
+                <div class="info">
+                    <div class="main"><a class="imageLink" href="surveillance.html">Surveillance</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="option active" style="--optionBackground: url(images/0.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+                <div class="icon">
+                    <i class="fa-solid fa-house"></i>
+
+                </div>
+                <div class="info">
+                    <div class="main"><a class="imageLink" href="index.html">Home</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="site">
+    <nav>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="globalization.html">Globalization</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="surveillance.html">Surveillance</a>
+        <a href="index.html">Home</a>
+    </nav>
+</section>
+<script
+        crossorigin="anonymous"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+></script>
+<script>
+    var script = document.createElement('script'); // Create a new script element
+
+    if (window.browserInfo.mobile) {
+        document.getElementById('options').style.height = "25vh"
+
+        script.src = 'mobile-header.js'; // Set the source to mobile-header.js for mobile devices
+    } else {
+        // document.getElementById('options').style.height = "50vh"
+
+        script.src = 'header.js'; // Set the source to header.js for non-mobile devices
+    }
+
+    document.head.appendChild(script); // Append the script element to the head of the document
+</script>
+<script src="js/carousel.js"></script>
+<script src="js/header.js"></script>
 </body>
 </html>

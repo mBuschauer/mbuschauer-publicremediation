@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.notFooter{
+    flex: 1
+}
+
 .flexbox {
     display: flex;
 }
@@ -161,4 +171,20 @@
 .interactive > p > a:visited{
     text-decoration: none;
     color: #222222;
+}
+
+.verticalSpacer{
+    height: 5vh;
+}
+.footerDiv{
+    color: white;
+    padding: 20px 20px 20px 20px
+}
+.footerDiv > h6 >  a{
+    color:white;
+    /*text-decoration: none;*/
+}
+.footerDiv > h6 > a:visited{
+    color:white;
+    /*text-decoration: none;*/
 }
