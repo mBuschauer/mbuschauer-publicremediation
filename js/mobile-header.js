@@ -4,7 +4,7 @@ var $content = $('header .content'),
     headerOffset;
 
 function calculateHeaderOffset() {
-    headerOffset = $nav.offset().top;
+    headerOffset = $nav.offset().top * 0.75; // Set to 75% of the header's top offset
     console.log("Header offset recalculated: ", headerOffset);
 }
 

@@ -295,7 +295,7 @@
 </section>
 <section class="mainInformation">
     <h1>Fingerprinting</h1>
-    <p>Identifying you, online, through your device and browser characteristics</p>
+    <h3>Identifying you, online, through your device and browser characteristics</h3>
     <div class="flexbox">
         <div class="holder"></div>
 
@@ -326,25 +326,44 @@
         </div>
         <div class="holder"></div>
     </div>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+    <p>spacing</p>
+
 
 </section>
-<!--<script>-->
-<!--    console.log(window)-->
-<!--    document.getElementById('browserInfo').innerHTML = `<p><strong>Browser:</strong> ${window.browserInfo.browser}</p>`;-->
-<!--    document.getElementById('mobile').innerHTML = `<p><strong>Is Mobile:</strong> ${window.browserInfo.mobile}</p>`-->
-<!--    document.getElementById('screenInfo').innerHTML = `<p><strong>Screen Resolution:</strong> ${window.browserInfo.screen}</p>`;-->
-<!--    document.getElementById('languageTimezone').innerHTML = `<p><strong>Language:</strong> ${navigator.language}, <strong>Time Zone:</strong> ${Intl.DateTimeFormat().resolvedOptions().timeZone}</p>`;-->
-<!--    document.getElementById('webGLInfo').innerHTML = getWebGLInfo()-->
-<!--    const cookiesEnabled = navigator.cookieEnabled ? 'Enabled' : 'Disabled';-->
-<!--    document.getElementById('storageInfo').innerHTML = `<p><strong>Cookies:</strong> ${cookiesEnabled}</p>`;-->
-<!--    const extensionInfoDiv = document.getElementById('extensionInfo');-->
+<script>
+    document.getElementById('browserInfo').innerHTML = `<p><strong>Browser:</strong> ${window.browserInfo.browser}</p>`;
+    document.getElementById('mobile').innerHTML = `<p><strong>Is Mobile:</strong> ${window.browserInfo.mobile}</p>`
+    document.getElementById('screenInfo').innerHTML = `<p><strong>Screen Resolution:</strong> ${window.browserInfo.screen}</p>`;
+    document.getElementById('languageTimezone').innerHTML = `<p><strong>Language:</strong> ${navigator.language}, <strong>Time Zone:</strong> ${Intl.DateTimeFormat().resolvedOptions().timeZone}</p>`;
+    document.getElementById('webGLInfo').innerHTML = getWebGLInfo()
+    const cookiesEnabled = navigator.cookieEnabled ? 'Enabled' : 'Disabled';
+    document.getElementById('storageInfo').innerHTML = `<p><strong>Cookies:</strong> ${cookiesEnabled}</p>`;
+    const extensionInfoDiv = document.getElementById('extensionInfo');
 
-<!--    if (document.getElementById('AinEzJhSCyjM')) {-->
-<!--        extensionInfoDiv.innerHTML = "<p><strong>Adblocker:</strong> No</p>"-->
-<!--    } else {-->
-<!--        extensionInfoDiv.innerHTML = "<p><strong>Adblocker:</strong> Yes</p>"-->
-<!--    }-->
-<!--</script>-->
+    if (document.getElementById('AinEzJhSCyjM')) {
+        extensionInfoDiv.innerHTML = "<p><strong>Adblocker:</strong> No</p>"
+    } else {
+        extensionInfoDiv.innerHTML = "<p><strong>Adblocker:</strong> Yes</p>"
+    }
+</script>
 <script
         crossorigin="anonymous"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -355,7 +374,7 @@
     var script = document.createElement('script'); // Create a new script element
 
     if (window.browserInfo.mobile) {
-        document.getElementById('options').style.height = "50vh"
+        document.getElementById('options').style.height = "25vh"
 
         script.src = 'mobile-header.js'; // Set the source to mobile-header.js for mobile devices
     } else {
