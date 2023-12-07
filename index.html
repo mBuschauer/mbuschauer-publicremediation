@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Browser's Story</title>
-<!--    <link rel="stylesheet" href="style.css">-->
     <link
-            rel="stylesheet"
+            crossorigin="anonymous"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-            crossorigin="anonymous"
             referrerpolicy="no-referrer"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="carousel.css" />
-    <link rel="stylesheet" href="header.css" />
+    <link href="carousel.css" rel="stylesheet"/>
+    <link href="header.css" rel="stylesheet"/>
 
-    <script src="/ad-provider.js" type="text/javascript"></script>
+    <script src="/js/ad-provider.js" type="text/javascript"></script>
     <script>
         (function (window) {
             {
@@ -123,32 +122,32 @@
                 // system
                 var os = unknown;
                 var clientStrings = [
-                    {s:'Windows 3.11', r:/Win16/},
-                    {s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
-                    {s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
-                    {s:'Windows 98', r:/(Windows 98|Win98)/},
-                    {s:'Windows CE', r:/Windows CE/},
-                    {s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
-                    {s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
-                    {s:'Windows Server 2003', r:/Windows NT 5.2/},
-                    {s:'Windows Vista', r:/Windows NT 6.0/},
-                    {s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
-                    {s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
-                    {s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
-                    {s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
-                    {s:'Windows ME', r:/Windows ME/},
-                    {s:'Android', r:/Android/},
-                    {s:'Open BSD', r:/OpenBSD/},
-                    {s:'Sun OS', r:/SunOS/},
-                    {s:'Linux', r:/(Linux|X11)/},
-                    {s:'iOS', r:/(iPhone|iPad|iPod)/},
-                    {s:'Mac OS X', r:/Mac OS X/},
-                    {s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
-                    {s:'QNX', r:/QNX/},
-                    {s:'UNIX', r:/UNIX/},
-                    {s:'BeOS', r:/BeOS/},
-                    {s:'OS/2', r:/OS\/2/},
-                    {s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
+                    {s: 'Windows 3.11', r: /Win16/},
+                    {s: 'Windows 95', r: /(Windows 95|Win95|Windows_95)/},
+                    {s: 'Windows ME', r: /(Win 9x 4.90|Windows ME)/},
+                    {s: 'Windows 98', r: /(Windows 98|Win98)/},
+                    {s: 'Windows CE', r: /Windows CE/},
+                    {s: 'Windows 2000', r: /(Windows NT 5.0|Windows 2000)/},
+                    {s: 'Windows XP', r: /(Windows NT 5.1|Windows XP)/},
+                    {s: 'Windows Server 2003', r: /Windows NT 5.2/},
+                    {s: 'Windows Vista', r: /Windows NT 6.0/},
+                    {s: 'Windows 7', r: /(Windows 7|Windows NT 6.1)/},
+                    {s: 'Windows 8.1', r: /(Windows 8.1|Windows NT 6.3)/},
+                    {s: 'Windows 8', r: /(Windows 8|Windows NT 6.2)/},
+                    {s: 'Windows NT 4.0', r: /(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+                    {s: 'Windows ME', r: /Windows ME/},
+                    {s: 'Android', r: /Android/},
+                    {s: 'Open BSD', r: /OpenBSD/},
+                    {s: 'Sun OS', r: /SunOS/},
+                    {s: 'Linux', r: /(Linux|X11)/},
+                    {s: 'iOS', r: /(iPhone|iPad|iPod)/},
+                    {s: 'Mac OS X', r: /Mac OS X/},
+                    {s: 'Mac OS', r: /(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+                    {s: 'QNX', r: /QNX/},
+                    {s: 'UNIX', r: /UNIX/},
+                    {s: 'BeOS', r: /BeOS/},
+                    {s: 'OS/2', r: /OS\/2/},
+                    {s: 'Search Bot', r: /(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
                 ];
                 for (var id in clientStrings) {
                     var cs = clientStrings[id];
@@ -193,7 +192,7 @@
             };
         }(this));
     </script>
-    <script>function getWebGLInfo()  {
+    <script>function getWebGLInfo() {
         const canvas = document.createElement('canvas');
         let gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
 
@@ -209,43 +208,36 @@
 
 <div class="carousel">
     <div class="options" id="options">
-        <!-- --optionBackground : CSS Local Variable -->
+        <div
+                class="option"
+                style="
+          --optionBackground: url(images/1-bad2.png);
+        "
+        >
+            <div class="label">
+                <div class="icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <div class="info">
+                    <div class="main"><a class="imageLink" href="algorithms.html">Algorithms</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="option" style="--optionBackground: url(images/2-wide.png);">
+            <div class="shadow"></div>
+            <div class="label">
+                <div class="icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class="info">
+                    <div class="main"><a class="imageLink" href="globalization.html">Globalization</a></div>
+                </div>
+            </div>
+        </div>
+
         <div
                 class="option active"
-                style="
-          --optionBackground: url(images/1.jpg);
-        "
-        >
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <i class="fas fa-walking"></i>
-                </div>
-                <div class="info">
-                    <div class="main">Algorithms</div>
-                </div>
-            </div>
-        </div>
-
-        <div
-                class="option"
-                style="
-          --optionBackground: url(images/2-wide.png);
-        "
-        >
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <i class="fas fa-tint"></i>
-                </div>
-                <div class="info">
-                    <div class="main">Globalization</div>
-                </div>
-            </div>
-        </div>
-
-        <div
-                class="option"
                 style="
           --optionBackground: url(images/3-wide.png);
         "
@@ -253,10 +245,10 @@
             <div class="shadow"></div>
             <div class="label">
                 <div class="icon">
-                    <i class="fas fa-snowflake"></i>
-                </div>
+                    <i class="fa-solid fa-gears"></i></div>
+
                 <div class="info">
-                    <div class="main">Infrastructure</div>
+                    <div class="main"><a class="imageLink" href="infrastructure.html">Infrastructure</a></div>
                 </div>
             </div>
         </div>
@@ -273,24 +265,19 @@
                     <i class="fa-solid fa-user-secret"></i>
                 </div>
                 <div class="info">
-                    <div class="main">Surveillance</div>
+                    <div class="main"><a class="imageLink" href="surveillance.html">Surveillance</a></div>
                 </div>
             </div>
         </div>
 
-        <div
-                class="option"
-                style="
-          --optionBackground: url(images/5-wide.png);
-        "
-        >
+        <div class="option" style="--optionBackground: url(images/5-wide.png);">
             <div class="shadow"></div>
             <div class="label">
                 <div class="icon">
-                    <i class="fas fa-sun"></i>
+                    <i class="fa-solid fa-lock"></i>
                 </div>
                 <div class="info">
-                    <div class="main">Regulation</div>
+                    <div class="main"><a class="imageLink" href="regulation.html">Regulation</a></div>
                 </div>
             </div>
         </div>
@@ -298,22 +285,23 @@
 </div>
 <section class="site">
     <nav>
-        <a href="">Page</a>
-        <a href="">Page</a>
-        <a href="">Page</a>
-        <a href="">Page</a>
-        <a href="">Page</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="globalization.html">Globalization</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="surveillance.html">Surveillance</a>
+        <a href="regulation.html">Regulation</a>
     </nav>
 </section>
 
 
 <div class="container">
-        <h1>Your Browser's Story</h1>
-        <h2>Discover the Hidden Trails of Your Digital Footprints</h2>
+    <h1>Your Browser's Story</h1>
+    <h2>Discover the Hidden Trails of Your Digital Footprints</h2>
 
     <section id="introduction">
         <h3>Understanding Digital Fingerprinting</h3>
-        <p>Explore how your online activities are tracked and the extent of information that can be collected through digital fingerprinting.</p>
+        <p>Explore how your online activities are tracked and the extent of information that can be collected through
+            digital fingerprinting.</p>
     </section>
 
     <section id="impact">
@@ -356,10 +344,10 @@
     }
 </script>
 <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 ></script>
 <script>
     var script = document.createElement('script'); // Create a new script element
@@ -369,12 +357,14 @@
 
         script.src = 'mobile-header.js'; // Set the source to mobile-header.js for mobile devices
     } else {
+        // document.getElementById('options').style.height = "50vh"
+
         script.src = 'header.js'; // Set the source to header.js for non-mobile devices
     }
 
     document.head.appendChild(script); // Append the script element to the head of the document
 </script>
-<script src="carousel.js"></script>
-<script src="header.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/header.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ html, body {
 }
 
 html {
+    font: 1em/1.5 "Lato", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizelegibility;
@@ -16,6 +17,18 @@ body {
     font-size: 1.3em;
 }
 
+body .options .option .label .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #222;
+    color: white;
+}
 
 .site {
     padding: 1em 0;
@@ -23,14 +36,17 @@ body {
     background-color: #efefef;
     font-size: .8em;
     color: #444;
-    position:relative
+    position:relative;
+    transition: 0.3s;
 }
 .site a {
     color: #666;
     text-decoration: none;
+    transition: 0.3s;
 }
 .site a:hover {
     color: #222;
+    transition: 0.3s;
 }
 
 .site nav{
@@ -47,5 +63,7 @@ body {
 }
 .site nav a:hover{
     background:#333;
-    color:#fff
+    color:#fff;
+    transition: 0.3s;
+
 }

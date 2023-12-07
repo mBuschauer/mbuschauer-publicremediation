@@ -27,7 +27,7 @@ Scroller.prototype = {
 
     init: function() {
         window.addEventListener('scroll', this.onScroll.bind(this), false);
-        $blur.css('background-image',$('header:first-of-type').css('background-image'));
+        $blur.css('options',$('header:first-of-type').css('options'));
     },
 
 
