@@ -47,9 +47,9 @@ body {
 }
 
 .rightPicture {
-    max-width: 30vw;
+    max-width: 50vw;
     flex-grow: 0;
-    max-height: 40vh;
+    max-height: 60vh;
 }
 
 .interactive > h2 {
