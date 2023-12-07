@@ -1,0 +1,40 @@
+.flexbox{
+    display: flex;
+}
+
+.mainInformation > h1{
+    text-align:center;
+    padding: 5vh 0 0 0;
+    color: #222222;
+}
+.mainInformation > p{
+    text-align:center;
+    color: #222222;
+}
+
+.box > p{
+    text-align: center;
+}
+.holder{
+    max-width: 10vw;
+    min-width: 5vw;
+    /*border: 2px solid red;*/
+    flex-grow: 1;
+}
+
+.box{
+    padding: 5px 20px 0 20px;
+    justify-content: space-evenly;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    width: 60vw;
+    flex-grow: 0;
+    /*border: 2px solid black*/
+}
+.rightPicture{
+    max-width: 30vw;
+    flex-grow: 0;
+    max-height: 40vh;
+}
