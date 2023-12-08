@@ -47,7 +47,7 @@ body {
 }
 
 .rightPicture {
-    max-width: 50vw;
+    max-width: 40vw;
     flex-grow: 0;
     max-height: 60vh;
 }
@@ -199,4 +199,7 @@ body {
     text-align: center;
     width: 80vw;
     flex-grow: 0;
+}
+figure{
+    max-width: 35vw;
 }

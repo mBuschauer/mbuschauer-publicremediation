@@ -50,6 +50,7 @@ body .options .option .label .icon {
 
 .site nav{
     position:absolute;
+    z-index: 99;
     top:0;
     left:0;
     background:#222;
