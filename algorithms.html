@@ -15,7 +15,7 @@
     <link href="carousel.css" rel="stylesheet"/>
     <link href="header.css" rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
 
     <style>
         @font-face {
@@ -27,11 +27,12 @@
     <script src="/js/ad-provider.js" type="text/javascript"></script>
     <script>
         (function (window) {
-            {
-                // mobile version
-                var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
 
-            }
+            const nVer = navigator.appVersion;
+
+            // mobile version
+            const mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+
             window.browserInfo = {
                 mobile: mobile,
             };
@@ -66,7 +67,7 @@
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
                     <div class="info">
-                        <div class="main"><a class="imageLink" href="globalization">Globalization</a></div>
+                        <div class="main"><a class="imageLink" href="globalization.html">Globalization</a></div>
                     </div>
                 </div>
             </div>
@@ -83,7 +84,7 @@
                         <i class="fa-solid fa-gears"></i></div>
 
                     <div class="info">
-                        <div class="main"><a class="imageLink" href="infrastructure">Infrastructure</a></div>
+                        <div class="main"><a class="imageLink" href="infrastructure.html">Infrastructure</a></div>
                     </div>
                 </div>
             </div>
@@ -100,7 +101,7 @@
                         <i class="fa-solid fa-user-secret"></i>
                     </div>
                     <div class="info">
-                        <div class="main"><a class="imageLink" href="surveillance">Surveillance</a></div>
+                        <div class="main"><a class="imageLink" href="surveillance.html">Surveillance</a></div>
                     </div>
                 </div>
             </div>
@@ -112,7 +113,7 @@
                         <i class="fa-solid fa-lock"></i>
                     </div>
                     <div class="info">
-                        <div class="main"><a class="imageLink" href="regulation">Regulation</a></div>
+                        <div class="main"><a class="imageLink" href="regulation.html">Regulation</a></div>
                     </div>
                 </div>
             </div>
@@ -121,10 +122,10 @@
     <section class="site">
         <nav>
             <a href="index.html">Home</a>
-            <a href="globalization">Globalization</a>
-            <a href="infrastructure">Infrastructure</a>
-            <a href="surveillance">Surveillance</a>
-            <a href="regulation">Regulation</a>
+            <a href="globalization.html">Globalization</a>
+            <a href="infrastructure.html">Infrastructure</a>
+            <a href="surveillance.html">Surveillance</a>
+            <a href="regulation.html">Regulation</a>
         </nav>
     </section>
     <section class="mainInformation">
@@ -147,7 +148,7 @@
                 </p>
             </div>
             <div class="rightPicture">
-                <figure><img class="rightPicture" src="images/myanmar.jpg" style="padding-bottom: 0">
+                <figure><img alt="Map of Myanmar" class="rightPicture" src="images/myanmar.jpg" style="padding-bottom: 0">
                     <figcaption style="font-family: Amnesty,serif;padding-top:0">Myanmar<br/></figcaption>
                 </figure>
             </div>
@@ -156,7 +157,7 @@
 
         <div class="flexbox">
             <div class="holder"></div>
-            <div class="rightPicture"><img class="rightPicture" src="images/myanmar-internet.jpg">
+            <div class="rightPicture"><img alt="Art from amnesty.com" class="rightPicture" src="images/myanmar-internet.jpg">
                 <p style="font-size: 12px;">© Tamara-Jade Kaz<br/>Artwork commissioned for publication of research
                     looking at the Rohingya right to remedy from Meta</p></div>
 
@@ -197,8 +198,8 @@
                 </p>
             </div>
             <div class="rightPicture">
-                <figure><img class="rightPicture" src="images/youtube.webp" style="padding-bottom: 0">
-                    <figcaption style="font-family: Amnesty,serif;padding-top:0">Brookings - YouTube Home<br/>
+                <figure><img alt="YouTube under Scrutiny" class="rightPicture" src="images/youtube.webp" style="padding-bottom: 0">
+                    <figcaption style="padding-top:0">Brookings - YouTube Home<br/>
                     </figcaption>
                 </figure>
             </div>
